@@ -1,0 +1,34 @@
+.fr_navbar {
+	background-color: #7bd9ff;
+}
+
+.fr_push{
+	padding-top: 50px;
+}
+
+.fr_item 
+{
+}
+
+.fr_fruit{
+	background-color: #acff89;
+}
+
+figcaption {
+	position: absolute;
+	top:0;
+	left:0;
+	padding: 10px;
+	background-color: #feb2ff;
+
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+}
