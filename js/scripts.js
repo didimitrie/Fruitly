@@ -8,7 +8,7 @@ function getRandomInt (min, max) {
 $( document ).ready(function() {
     console.log( "ready!" );
 
-    var imgs = $(".fr_fruit").children("img");
+    var imgs = $(".fr_item").children().children().children("img");
     $.each(imgs, function () {
     	$(this).attr('src', 'assets/imgs/' + getRandomInt(2,100) + ".png");
     });
