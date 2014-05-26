@@ -1,9 +1,11 @@
-.col-md-3{
+.fr_div{
 	margin-top: 10px;
+	max-height: 100px;
+	overflow: hidden;
 }
 
 .fr_navbar {
-	background-color: #7bd9ff;
+	background-color: #e6e6e6;
 }
 
 .fr_push{
@@ -38,27 +40,32 @@ figure > div {
 
 figure img {
 	-webkit-transition: -webkit-transform 0.4s;
+	-webkit-transiton: -webkit-blur 1s;
 	-moz-transition: -moz-transform 0.4s;
 	transition: transform 0.4s;
+	max-height: 400px;
 }
 
 figure:hover img,
 figure.cs-hover img {
-	-webkit-transform: translateX(95%);
-	-moz-transform: translateX(95%);
-	-ms-transform: translateX(95%);
-	transform: translateX(95%);
+	-webkit-transform: translateX(10%);
+	-moz-transform: translateX(10%);
+	-ms-transform: translateX(10%);
+	transform: translateX(10%);
+	-webkit-filter: blur(2px);
+	
 }
 
 figcaption {
-position: absolute;
+	position: absolute;
 	top: 0;
 	left: 0;
 	padding: 20px;
 	height: 100%;
 	width: 70%;
 	opacity: 0;
-	background-color: #ffc7f9;
+	background-color: white;
+
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	backface-visibility: hidden;
