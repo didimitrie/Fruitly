@@ -9,8 +9,8 @@ $( document ).ready(function() {
     console.log( "ready!" );
 
     var imgs = $(".fr_item").children().children().children("img");
-    $.each(imgs, function () {
-    	$(this).attr('src', 'assets/imgs/' + getRandomInt(2,100) + ".png");
+    $.each(imgs, function (index) {
+    	$(this).attr('src', 'assets/fullbleed/0'+(index+1)+'.jpg');
     });
 
     /* stupid hack to keep divs square 
