@@ -17,30 +17,24 @@
 <body>
 <nav class="navbar navbar-fixed-top fr_navbar" role="navigation">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                </button>
-                <a class="navbar-brand" href="#">Fruitl</a>
-            </div>
 
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="#about">Location: Belgium</a>
-                    </li>
-                    <li><a href="#services">My Account</a>
-                    </li>
-                    <li><a href="#contact">More Feautre Creep</a>
-                    </li>
-                </ul>
-            </div>
+        	<div class="fr_selector"><span class="glyphicon glyphicon-leaf white"></span></div>
+            <div class="fr_selector">Fruitly</div>
+            <div id="locationmarker" class="fr_selector" data-toggle="popover" title="Brussels, BE." data-placement="bottom" 
+            data-content="<span style='text-align:center'>Not in Brussels? Tell us where:<input type='text' class='form-control' placeholder='Your Location'></span>">
+            <span class="glyphicon glyphicon-map-marker white"></span></div>
+            <div class="filter fr_selector" data-filter="all">All</div>
+		 	<div class="filter fr_selector" data-filter=".category-1">Fruits</div>
+		  	<div class="filter fr_selector" data-filter=".category-2">Vegetables</div>
+
+
 
 		</div><!-- end nav containter -->
 </nav>
 
-<div class="row fr_push">
+<div id="container" class="row fr_push">
 
-<div class="col-md-3 col-xs-6 fr_div nopadding">
+<div class="col-md-3 col-xs-6 fr_div nopadding mix">
 
 <div class="fr_item">
 	<figure>
@@ -61,6 +55,7 @@
 </div>
 
 <script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script src="js/scripts.js"></script>
 
