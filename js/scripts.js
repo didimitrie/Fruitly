@@ -19,13 +19,7 @@ $( document ).ready(function() {
     	$(this).attr('src', 'assets/fullbleed/0'+(index+1)+'.jpg');
     });
 
-    /* stupid hack to keep divs square 
-		of course it doesn't compute with bstrap css */
-    /*
-    $(".fr_fruit").each(function(){
-    	$(this).height(($(this).width()));
-    });
-	*/
-
 });
+
+
 
