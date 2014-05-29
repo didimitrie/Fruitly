@@ -1,8 +1,6 @@
 Fruitly
 =======
 
-It's about time man...
-
 What: 
 Fruitly is an application that promotes eating vegetables and fruits that are in season, in the place you're living in.
 
