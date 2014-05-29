@@ -1,25 +1,24 @@
+body {
+	background-color: black;
+}
+
 .fr_div{
 	margin-top: 10px;
-	max-height: 100px;
+	max-height: 120px;
 	overflow: hidden;
 }
 
 .fr_navbar {
-	background-color: #e6e6e6;
+	
 }
 
 .fr_push{
 	padding-top: 50px;
 }
 
-.fr_fruit{
-	background-color: #acff89;
-}
-
 .fr_item 
 {
 	background-color: #85ffe2;
-	text-align: center;
 	-webkit-perspective: 1700px;
 	-moz-perspective: 1700px;
 	perspective: 1700px;
@@ -35,36 +34,33 @@ figure {
 }
 
 figure > div {
-	overflow: hidden;
+	
 }
 
 figure img {
-	-webkit-transition: -webkit-transform 0.4s;
-	-webkit-transiton: -webkit-blur 1s;
-	-moz-transition: -moz-transform 0.4s;
-	transition: transform 0.4s;
-	max-height: 400px;
+	-webkit-transition: -webkit-transform 0.2s;
+	-moz-transition: -moz-transform 0.2s;
+	transition: transform 0.2s;
+	max-height: 600px;
 }
 
 figure:hover img,
 figure.cs-hover img {
-	-webkit-transform: translateX(10%);
-	-moz-transform: translateX(10%);
-	-ms-transform: translateX(10%);
-	transform: translateX(10%);
-	-webkit-filter: blur(2px);
-	
+	-webkit-transform: translateX(5%);
+	-moz-transform: translateX(5%);
+	-ms-transform: translateX(5%);
+	transform: translateX(5%);	
 }
 
 figcaption {
 	position: absolute;
 	top: 0;
 	left: 0;
-	padding: 20px;
+	padding: 5px;
 	height: 100%;
 	width: 70%;
 	opacity: 0;
-	background-color: white;
+	background-color: black;
 
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;

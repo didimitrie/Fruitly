@@ -1,1 +1,1 @@
-function getRandomInt(n,e){return Math.floor(Math.random()*(e-n+1))+n}$(document).ready(function(){console.log("ready!");var n=$(".fr_item").children().children().children("img");$.each(n,function(n){$(this).attr("src","assets/fullbleed/0"+(n+1)+".jpg")})});
+$(document).ready(function(){console.log("ready!");for(var e=$(".fr_div"),r=0;3>r;r++)$(e).clone().insertAfter(".fr_div");var i=$(".fr_item").children().children().children("img");$.each(i,function(e){$(this).attr("src","assets/fullbleed/0"+(e+1)+".jpg")})});

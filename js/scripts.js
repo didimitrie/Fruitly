@@ -1,12 +1,18 @@
 /*jshint devel:true */
 
+/*
 function getRandomInt (min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-
+*/
 
 $( document ).ready(function() {
     console.log( "ready!" );
+
+    var fruit = $(".fr_div");
+    for (var i = 0; i < 3; i++) {
+      $(fruit).clone().insertAfter(".fr_div");
+    }
 
     var imgs = $(".fr_item").children().children().children("img");
     $.each(imgs, function (index) {
