@@ -1,10 +1,17 @@
-/*jshint devel:true */
+/*jshint devel:true, unused: false, undef:false*/
 
 /*
 function getRandomInt (min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 */
+
+function showFruitDetail()
+{
+    $("#fr_details").fadeToggle();
+    console.log("bal");
+    $("body").toggleClass("noscroll");
+}
 
 $( document ).ready(function() {
     console.log( "ready!" );
@@ -25,7 +32,7 @@ $( document ).ready(function() {
     	$(this).attr('src', 'assets/fullbleed/0'+(index+1)+'.jpg');
     });
 
-    var dupe = $('#container').html(); console.log(dupe);
+    var dupe = $('#container').html();
     $('#container').append(dupe);
 
     $(function(){
