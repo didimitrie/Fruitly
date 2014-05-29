@@ -25,22 +25,31 @@ $( document ).ready(function() {
     	$(this).attr('src', 'assets/fullbleed/0'+(index+1)+'.jpg');
     });
 
+    var dupe = $('#container').html(); console.log(dupe);
+    $('#container').append(dupe);
+
     $(function(){
         $('#container').mixItUp({
          animation: {
-            perspectiveDistance: '1000px',
-            perspectiveOrigin: '0 50%',
-            easing: 'cubic-bezier(0.375, 0.885, 0.32, 1.275)',
             enable: true,
             duration: 200,
-            effects: 'fade stagger(100ms)',
-            staggerSequence: function(i){ return i%3; }
+            effects: 'fade stagger(50ms)',
+            staggerSequence: function(i){
+                return i % 3;
+                }
             }
         });
     });
 
-    
-    
+    $('body').on('click', function (e) {
+    $('[data-toggle=popover]').each(function () {
+        // hide any open popovers when the anywhere else in the body is clicked
+        if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+            $(this).popover('hide');
+        }
+    });
+});
+
 });
 
 

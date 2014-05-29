@@ -15,12 +15,10 @@ h3 {
 
 .popover-content{
 	text-align: center;
-	font-size: 14px;
 }
 
 .popover-content input{
 	margin-top: 5px;
-	height:22px;
 }
 
 #container .mix {
@@ -80,6 +78,7 @@ figcaption {
 }
 
 figcaption:hover{
+	cursor: pointer;
 }
 
 .fr_selector{
